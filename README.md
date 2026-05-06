@@ -1,13 +1,15 @@
 # Star-tracking-system
-#Problem statement: (Q4)
+Problem statement: (Q4)
 The objective is to determine the optimized direction of the movement and calculate the rotation angle to align with the strongest signal.
-#concept:
-Each sensor picks up the intensity value of the signal strength of light from all the directions. The system compares all these values and selects the highest intensity value to trace, assuming it is the target intensity.
-##Logic:
-1.The input values of the directions from the sensors and picked up
-2.The values are compared to identify the maximum value
-3.The generated output is of the corresponding direction of maximum intensity value
-#code:
+concept:
+Each sensor picks up the intensity value of the signal strength of light from all directions. The system compares all these values and selects the highest intensity value to trace, assuming it is the target intensity.
+Logic:
+1. The input values of the directions from the sensors are picked up
+2. The values are compared to identify the maximum value
+3. The generated output is of the corresponding direction of the maximum intensity value
+
+
+code:
 #include<stdio.h>
 int main()
 {
@@ -62,9 +64,10 @@ int main()
     return 0;
 
 }
-#sample input:
+sample input:
 300 450 800 300
-##sample output:
+
+sample output:
 Move in the direction: Up 
-the horizontal angle of roation is: -18.00 degrees 
+the horizontal angle of rotation is: -18.00 degrees 
 the vertical angle of rotation is: 40.91 degrees 
